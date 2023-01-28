@@ -34,3 +34,20 @@ void FillArray(int[,,] inputArray)
     }
   }
 }
+
+// вывод массива
+void PrintArray (int[,,] inputArray)
+{
+  for (int i = 0; i < inputArray.GetLength(0); i++)
+  {
+    for (int j = 0; j < inputArray.GetLength(1); j++)
+    {
+      for (int k = 0; k < inputArray.GetLength(2); k++)
+      {
+        Console.Write( $"{inputArray[i,j,k]}({i}, {j}, {k}); ");
+      }
+      Console.WriteLine();
+    }
+    Console.WriteLine();
+  }
+}
